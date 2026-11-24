@@ -8,7 +8,7 @@ SDK clients for [Concord](https://github.com/podomy/concord).
 
 ## Languages
 
-Go is available now. C, C++, and Python clients are planned and will each live in their own top-level directory (`c/`, `cpp/`, `python/`), so they can be added without disturbing the Go module at the repository root.
+Go is available now. C, C++, and Python clients are planned.
 
 ## Go
 
