@@ -4,7 +4,7 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/podomy/concord-sdk" alt="License"></a>
 </p>
 
-SDK clients for Concord, the AP coordination runtime for robots that operate where links die.
+SDK clients for [Concord](https://github.com/podomy/concord).
 
 ## Languages
 
