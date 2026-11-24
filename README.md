@@ -4,11 +4,15 @@
   <a href="LICENSE"><img src="https://img.shields.io/github/license/podomy/concord-sdk" alt="License"></a>
 </p>
 
-Go client for Concord, the AP coordination runtime for robots that operate where links die.
+SDK clients for Concord, the AP coordination runtime for robots that operate where links die.
 
-This module is extracted from [podomy/concord](https://github.com/podomy/concord). Concord itself stays under AGPL-3.0; this SDK is licensed separately under Apache-2.0 to allow embedding in fleet applications.
+## Languages
 
-## Install
+Go is available now. C, C++, and Python clients are planned and will each live in their own top-level directory (`c/`, `cpp/`, `python/`), so they can be added without disturbing the Go module at the repository root.
+
+## Go
+
+### Install
 
 ```sh
 go get github.com/podomy/concord-sdk@latest
@@ -16,7 +20,7 @@ go get github.com/podomy/concord-sdk@latest
 
 Requires Go >= 1.26.3.
 
-## Example
+### Example
 
 ```go
 client, err := sdk.Dial()
@@ -45,9 +49,10 @@ if err != nil {
 fmt.Printf("Workload submitted: %s\n", id)
 ```
 
-## API
+### API
 
 | Method | Description |
+| --- | --- |
 | client.Submit(ctx, w) | Submit a workload, returns its UUID |
 | client.Stop(ctx, id) | Stop and remove a workload |
 | client.Get(ctx, id) | Fetch a workload spec by UUID |
